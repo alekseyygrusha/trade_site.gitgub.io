@@ -1,0 +1,402 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="/assets/styles.css" />
+        <link rel="stylesheet" href="/assets/media.css" />
+        <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        <title>Trade Site</title>
+    </head>
+    <body>
+        <header
+            class="flex background"
+            style="background-image: url(/assets/img/bg2.png);"
+        >
+            <h1 class="intro">Выберите способ заработка</h1>
+            <div class="container">
+                <div class="ring active_block" id="ring1" data-num="1">
+                    <div class="transperent"></div>
+                    <div class="img_wrap">
+                        <img src="/assets/img/_icon.png" alt="Торговать" />
+                    </div>
+                    <h4>Торговать</h4>
+                </div>
+                <div class="ring" id="ring2"  data-num="2">
+                    <div class="transperent"></div>
+                    <div class="img_wrap">
+                        <img src="/assets/img/icon.png" alt="Инвестировать" />
+                    </div>
+                    <h4>Инвестировать</h4>
+                </div>
+                <div class="ring" id="ring3"  data-num="3">
+                    <div class="transperent"></div>
+                    <div class="img_wrap">
+                        <img
+                            src="/assets/img/icon3.png"
+                            alt="Привлекать инвесторов"
+                        />
+                    </div>
+                    <h4>Привлекать инвесторов</h4>
+                </div>
+            </div>
+            <div class="container_mobile hidden">
+                <div class="button_m btn_m1" data-num="1">
+                    <div class="img_block">
+                        <img src="/assets/img/icon_m1.png" alt="">
+                    </div>
+                    <p>Самостоятельно торговать</p>
+                    <div class="arrow_wrap">
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+                <div class="mobile_content" id="mobile_block1">
+                    <p class="description">
+                        Если вы ищете пассивный доход и предпочитаете, чтобы
+                        деньги для вас зарабатывал тот, кто умеет это
+                        делать, тогда попробуйте ЛАММ. ЛАММ – это сервис
+                        копирования сделок успешных трейдеров. Доходность ни
+                        чем не ограничена!
+                    </p>
+                    <h5>Как это работает</h5>
+                    <li>
+                        <span>1</span>
+                        <p>
+                            Вы выбираете управляющего из рейтинга по фильтру
+                            Options
+                        </p>
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <p>Подключаете свой счет к счету Управляющего</p>
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <p>На вашем счете начинается копирование сделок</p>
+                    </li>
+                    <li>
+                        <span>4</span>
+                        <p>
+                            Обратите внимание, что вы не перечисляете свои
+                            деньги Управляющему. Все ваши средства остаются
+                            на Вашем счете.
+                        </p>
+                    </li>
+                    <li>
+                        <span>5</span>
+                        <p>
+                            Вы можете подключиться к нескольким Управляющим
+                            одновременно.
+                        </p>
+                    </li>
+                    <li>
+                        <span>6</span>
+                        <p>
+                            Вы можете отключиться от Управляющих в любой
+                            момент.
+                        </p>
+                    </li>
+                    <div class="button_wrap">
+                        <a href="#" class="button continue">Открыть счет</a>
+                    </div>
+                    <div class="img_background background" style="background-image: url(/assets/img/photo_bg.png);">
+                        
+                    </div>
+                </div>
+                <div class="button_m btn_m2" data-num="2">
+                    <div class="img_block">
+                        <img src="/assets/img/smart_m2.png" alt="">
+                    </div>
+                    <p>Инвестировать</p>
+                    <div class="arrow_wrap">
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+                <div class="mobile_content" id="mobile_block2">
+                    <p class="description">
+                        Если вы ищете пассивный доход и предпочитаете, чтобы
+                        деньги для вас зарабатывал тот, кто умеет это
+                        делать, тогда попробуйте ЛАММ. ЛАММ – это сервис
+                        копирования сделок успешных трейдеров. Доходность ни
+                        чем не ограничена!
+                    </p>
+                    <h5>Как это работает</h5>
+                    <li>
+                        <span>1</span>
+                        <p>
+                            Вы выбираете управляющего из рейтинга по фильтру
+                            Options
+                        </p>
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <p>Подключаете свой счет к счету Управляющего</p>
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <p>На вашем счете начинается копирование сделок</p>
+                    </li>
+                    <li>
+                        <span>4</span>
+                        <p>
+                            Обратите внимание, что вы не перечисляете свои
+                            деньги Управляющему. Все ваши средства остаются
+                            на Вашем счете.
+                        </p>
+                    </li>
+                    <li>
+                        <span>5</span>
+                        <p>
+                            Вы можете подключиться к нескольким Управляющим
+                            одновременно.
+                        </p>
+                    </li>
+                    <li>
+                        <span>6</span>
+                        <p>
+                            Вы можете отключиться от Управляющих в любой
+                            момент.
+                        </p>
+                    </li>
+                    
+                    <div class="button_wrap">
+                        <a href="#" class="button continue">Открыть счет</a>
+                    </div>
+                </div>
+                <div class="button_m btn_m3" data-num="3">
+                    <div class="img_block">
+                        <img src="/assets/img/smart_m3.png" alt="">
+                    </div>
+                    <p>Привлекать инвесторов</p>
+                    <div class="arrow_wrap">
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+                <div class="mobile_content" id="mobile_block3">
+                    <p class="description">
+                        Если вы ищете пассивный доход и предпочитаете, чтобы
+                        деньги для вас зарабатывал тот, кто умеет это
+                        делать, тогда попробуйте ЛАММ. ЛАММ – это сервис
+                        копирования сделок успешных трейдеров. Доходность ни
+                        чем не ограничена!
+                    </p>
+                    <h5>Как это работает</h5>
+                    <li>
+                        <span>1</span>
+                        <p>
+                            Вы выбираете управляющего из рейтинга по фильтру
+                            Options
+                        </p>
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <p>Подключаете свой счет к счету Управляющего</p>
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <p>На вашем счете начинается копирование сделок</p>
+                    </li>
+                    <li>
+                        <span>4</span>
+                        <p>
+                            Обратите внимание, что вы не перечисляете свои
+                            деньги Управляющему. Все ваши средства остаются
+                            на Вашем счете.
+                        </p>
+                    </li>
+                    <li>
+                        <span>5</span>
+                        <p>
+                            Вы можете подключиться к нескольким Управляющим
+                            одновременно.
+                        </p>
+                    </li>
+                    <li>
+                        <span>6</span>
+                        <p>
+                            Вы можете отключиться от Управляющих в любой
+                            момент.
+                        </p>
+                    </li>
+                    
+                    <div class="button_wrap">
+                        <a href="#" class="button continue">Открыть счет</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section
+                class="main_section"
+                style="background-image: url(/assets/img/main_bg.png);"
+            >
+                <div class="pick_way">
+                    <nav>
+                        <li
+                            class="btn btn1 trade_link pick_active"
+                            data-num="1"
+                        >
+                        
+                            Торговать
+                        </li>
+                        <li class="btn btn2 investments_link" data-num="2">
+                            Инвестировать
+                        </li>
+                        <li class="btn btn3 atract_investors_link" data-num="3">
+                            Привлекать инвесторов
+                        </li>
+                    </nav>
+                </div>
+                <div class="container">
+                    <div class="box content active" id="block1">
+                        <p class="description">
+                            Если вы ищете пассивный доход и предпочитаете, чтобы
+                            деньги для вас зарабатывал тот, кто умеет это
+                            делать, тогда попробуйте ЛАММ. ЛАММ – это сервис
+                            копирования сделок успешных трейдеров. Доходность ни
+                            чем не ограничена!
+                        </p>
+                        <h5>Как это работает</h5>
+                        <li>
+                            <span>1</span>
+                            <p>
+                                Вы выбираете управляющего из рейтинга по фильтру
+                                Options
+                            </p>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <p>Подключаете свой счет к счету Управляющего</p>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <p>На вашем счете начинается копирование сделок</p>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <p>
+                                Обратите внимание, что вы не перечисляете свои
+                                деньги Управляющему. Все ваши средства остаются
+                                на Вашем счете.
+                            </p>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <p>
+                                Вы можете подключиться к нескольким Управляющим
+                                одновременно.
+                            </p>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <p>
+                                Вы можете отключиться от Управляющих в любой
+                                момент.
+                            </p>
+                        </li>
+                        <div class="button_wrap">
+                            <a href="#" class="button continue">Продолжить</a>
+                        </div>
+                    </div>
+                    <div class="box content " id="block2">
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Minima voluptate cupiditate quo nulla sunt
+                            placeat quis illum ut atque quibusdam?
+                        </p>
+                        <h5>Как это работает</h5>
+                        <li>
+                            <span>1</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, vero.
+                            </p>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut itaque nam.</p>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam minima autem ratione?</p>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <p>
+                                Обратите внимание, что вы не перечисляете свои
+                                деньги Управляющему. Все ваши средства остаются
+                                на Вашем счете.
+                            </p>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <p>
+                                Вы можете подключиться к нескольким Управляющим
+                                одновременно.
+                            </p>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <p>
+                                Вы можете отключиться от Управляющих в любой
+                                момент.
+                            </p>
+                        </li>
+                        <div class="button_wrap">
+                            <a href="#" class="button continue">Продолжить</a>
+                        </div>
+                    </div>
+                    <div class="box content " id="block3">
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab neque sed nihil error laudantium! Neque est odio repellendus tenetur optio aspernatur laudantium praesentium repudiandae illum exercitationem.
+                        </p>
+                        <h5>Как это работает</h5>
+                        <li>
+                            <span>1</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam explicabo nobis molestiae perferendis corrupti. Vitae, dignissimos ad.
+                            </p>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam explicabo nobis molestiae perferendis corrupti.</p>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, adipisci.</p>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis commodi maxime in?
+                            </p>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <p>
+                                Вы можете отключиться от Управляющих в любой
+                                момент.
+                            </p>
+                        </li>
+                        <div class="button_wrap">
+                            <a href="#" class="button continue">Продолжить</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="/assets/scripts.js"></script>
+        <script>
+           
+        </script>
+    </body>
+</html>

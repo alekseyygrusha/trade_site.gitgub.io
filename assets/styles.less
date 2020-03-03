@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal 16px sans-serif;
+    font-family: "PF Din Text Pro";
+    color: #1d1d1d;
+}
+
+html:root {}
+
+ul,
+a,
+nav {
+    list-style: none;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {}
+
+h1 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 24px;
+    color: #171717;
+    font-weight: 300;
+}
+
+h6 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+small {
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+
+}
+
+.background {
+    background-position: center;
+    background-size: cover;
+}
+
+.active_block {
+    border: 1px solid green;
+}
+
+.pick_active {
+    border-bottom: 1px solid green;
+}
+
+.button_wrap {
+    .button {
+        padding: 15px 30px;
+        border-radius: 3px;
+        background-color: #009e82;
+        color: white;
+
+    }
+
+    .button:hover {
+        cursor: pointer;
+        background-color: darken(#009e82, 10%);
+        transition: .2s;
+    }
+}
+
+.mobile_content {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.active_m {
+    .arrow_wrap {
+        transform: rotate(-180deg) translateX(15px);
+        transition: .3s;
+
+        .arrow {
+            // padding-right: -35px;
+        }
+
+    }
+}
+
+section {
+    padding: 0 30px;
+}
+
+.box {
+    display: none;
+}
+
+
+
+.box.active {
+    display: block;
+}
+
+header {
+    width: 100%;
+    min-height: 92vh;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    .intro {
+        padding-top: 150px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .container {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+        margin-bottom: 100px;
+
+        .ring {
+            position: relative;
+            min-width: 346px;
+            min-height: 346px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 50%;
+            text-align: center;
+
+            .img_wrap {
+                z-index: 2;
+                padding-bottom: 43px;
+            }
+
+            h4 {
+                color: #242424;
+                font-family: "PF Din Text Pro";
+                font-size: 28px;
+                font-weight: 300;
+                z-index: 2;
+            }
+        }
+
+        .transperent {
+            min-width: 356px;
+            min-height: 356px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #ffffff;
+            position: absolute;
+            opacity: 0.4;
+            z-index: 1;
+        }
+
+    }
+
+    .container_mobile {
+        flex-direction: column;
+
+        .button_m {
+            display: flex;
+            width: 100%;
+            max-width: 340px;
+            align-items: center;
+            position: relative;
+            margin: 10px auto;
+
+            .img_block {
+                padding: 20px;
+                z-index: 2;
+            }
+
+            p {
+                z-index: 2;
+                font-weight: 400;
+            }
+
+            .arrow_wrap {
+                position: relative;
+                padding-right: 35px;
+                margin-left: auto;
+
+                .arrow {
+                    position: absolute;
+                    width: 12px;
+                    height: 1px;
+                    background-color: #000203;
+                    transform: rotate(45deg);
+                }
+
+                .arrow:after {
+                    position: absolute;
+                    content: '';
+                    width: 12px;
+                    height: 1px;
+                    background-color: #000203;
+                    transform: rotate(-90deg) translateX(6px);
+
+                }
+            }
+        }
+
+        .button_m::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            opacity: 0.6;
+            z-index: 1;
+        }
+
+        .button_m {
+            cursor: pointer;
+        }
+
+
+
+    }
+}
+
+.main_section {
+
+    // flex-grow: grow;
+    .container {
+        max-width: 1257px;
+    }
+
+    .pick_way {
+        border-bottom: 1px solid #c5c5c2;
+
+        nav {
+            display: flex;
+            max-width: 1260px;
+            margin: 0 auto;
+            justify-content: space-between;
+
+            li {
+                text-align: center;
+                width: 345px;
+                padding: 40px 0;
+                color: #2e2e2e;
+                font-family: "PF Din Text Pro";
+                font-size: 28px;
+                font-weight: 400;
+            }
+
+            li:hover {
+                cursor: pointer;
+                color: lighten(#2e2e2e, 30%);
+                transition: .3s;
+            }
+        }
+    }
+
+
+}
+
+.content,
+.mobile_content {
+    // max-width: 677px;
+    padding-bottom: 80px;
+    text-align: left;
+    padding: 18px;
+
+    .description {
+        padding: 90px 0 35px 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 20px 0;
+
+        span {
+            font-size: 32px;
+            color: #00b596;
+        }
+
+        p {
+            padding-left: 10px;
+        }
+    }
+
+    .button_wrap {
+        margin: 40px 0 40px 0;
+    }
+
+    .img_background {
+        width: auto;
+        height: 351px;
+        margin: -10px;
+
+        img {
+            max-width: 320px;
+        }
+    }
+}

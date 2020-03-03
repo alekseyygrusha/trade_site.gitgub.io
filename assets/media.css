@@ -1,0 +1,97 @@
+@media (max-width: 1280px) {
+  header .container {
+    gap: 30px;
+  }
+  header .container .ring,
+  header .container .transperent {
+    min-width: 286px;
+    min-height: 286px;
+  }
+  header .container .ring h4,
+  header .container .transperent h4 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 980px) {
+  header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .container .ring,
+  header .container .transperent {
+    min-width: 346px;
+    min-height: 346px;
+  }
+  header .container .ring h4,
+  header .container .transperent h4 {
+    font-size: 28px;
+  }
+  header .container .ring {
+    margin: 20px;
+  }
+  .main_section .pick_way nav li {
+    padding: 30px 0;
+    font-size: 22px;
+  }
+}
+@media (max-width: 680px) {
+  header .intro {
+    font-size: 42px;
+  }
+  header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+  header .container .ring,
+  header .container .transperent {
+    min-width: 286px;
+    min-height: 286px;
+  }
+  header .container .ring h4,
+  header .container .transperent h4 {
+    font-size: 24px;
+  }
+  header .container .ring {
+    margin: 20px;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header .mobile_content {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  header .mobile_content .description {
+    padding: 20px 0 35px 0;
+  }
+  header .intro {
+    padding-top: 60px;
+  }
+  header .hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .container {
+    display: none;
+  }
+  .main_section {
+    display: none;
+  }
+}
